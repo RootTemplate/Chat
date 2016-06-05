@@ -1,0 +1,1 @@
+start javaw -jar "bin/ChatClient.jar"
