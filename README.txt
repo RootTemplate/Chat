@@ -6,7 +6,7 @@
 Проект: RootTemplate
 Авторы: RootTemplate Group 1
 Лицензия: MIT (Массачусетского технологического института); https://opensource.org/licenses/MIT
-Версия: 3
+Версия: 4
 Версия протокола: 1
 
 -------- Упрошенное Использование --------
@@ -26,7 +26,8 @@
 === КЛИЕНТ:
 start javaw -Dchat.printServerAddr=<true/false>
             -Dchat.consoleBufferSize=<int/"INF">
-            -Dchat.fontSize=<int> -jar "ChatClient.jar" 
+            -Dchat.fontSize=<int>
+            -Dchat.notifyAboutNewMessages=<true/false> -jar "ChatClient.jar" 
     <адрес сервера>
     <имя в чате>
 
@@ -42,6 +43,9 @@ start javaw -Dchat.printServerAddr=<true/false>
    По умолчанию равен 25600 (символов).
 3. "chat.fontSize" = <int>. Размер шрифта. Должен быть >= 1.
    По умолчанию равен 14.
+4. "chat.notifyAboutNewMessages" = <true/false>. Если установлено true, то программа будет опосвещать вас о новых
+   сообщениях, когда чат свернут.
+   По умолчанию "false".
 
 Примичание. Чтобы запускать клиент не под Windows или с дополнительной консолью, замените "start javaw" в команде запуска на "java".
 

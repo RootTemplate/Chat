@@ -1,1 +1,1 @@
-start javaw -jar "bin/ChatClient.jar"
+start javaw -jar -Dchat.notifyAboutNewMessages="true" "bin/ChatClient.jar"
